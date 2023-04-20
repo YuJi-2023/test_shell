@@ -34,10 +34,7 @@ char *_getenv(const char *name)
 int _print_dir()
 {
 	char *str;
-	int i;
 	char *dir;
-
-	i = 0;
 	str = _getenv("PATH");
 	printf("here is the full path: %s\n", str);
 	dir = strtok(str, ":");
